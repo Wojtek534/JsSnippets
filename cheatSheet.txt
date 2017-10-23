@@ -1,0 +1,7 @@
+\b  Backspace (ascii code 08)
+\f  Form feed (ascii code 0C)
+\n  New line
+\r  Carriage return
+\t  Tab
+\"  Double quote
+\\  Backslash character
