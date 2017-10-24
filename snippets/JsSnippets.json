@@ -61,5 +61,9 @@
 	"actionType": {
 		"prefix": "zzActionType",
 		"body": "export const $ACTION_NAME = '$ACTION_NAME';"
+	},
+	"event": {
+		"prefix": "zzEvent",
+		"body": "$Name = (event) => {\n\tevent.preventDefault();\n\n};"
 	}
 }
