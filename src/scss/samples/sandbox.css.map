@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,CAAE;EAEM,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,IAAY",
+"sources": ["sandbox.scss"],
+"names": [],
+"file": "sandbox.css"
+}

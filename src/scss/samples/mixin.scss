@@ -1,0 +1,16 @@
+// zzMixin
+@mixin Name {
+    color: blue;
+    display: block;
+}
+
+p {
+    @include Name;
+    font-size: 20px;
+}
+// Output
+p {
+    color: blue;
+    display: block;
+    font-size: 20px;
+}

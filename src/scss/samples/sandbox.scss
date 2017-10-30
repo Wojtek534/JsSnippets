@@ -1,0 +1,17 @@
+// zzIf
+$first: 5px;
+$secound: 10px;
+p {
+    @if($first>=0px) {
+        color: red;
+        font-size: 8px + $first;
+    }
+    @if($secound<5px) {
+        color: blue;
+        font-size: 8 + $secound;
+    }
+}
+@mixin Name {
+    color:blue;
+    display: block;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "jssnippets",
+  "version": "1.0.0",
+  "description": "My VS Code snippets set",
+  "main": "/src/index.js",
+  "scripts": {
+    "watch": "sass src/scss/samples/sandbox.scss:src/scss/samples/sandbox.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wojtek534/JsSnippets.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wojtek534/JsSnippets/issues"
+  },
+  "homepage": "https://github.com/Wojtek534/JsSnippets#readme"
+}

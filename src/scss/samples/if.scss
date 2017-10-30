@@ -1,0 +1,22 @@
+// zzIf
+$first: 5px;
+$secound: 10px;
+p {
+    @if($first>=0) {
+        color: red;
+        font-size: 8px + $first;
+    }
+    @if($secound<5) {
+        color: blue;
+        font-size: 8 + $secound;
+    }
+}
+
+// Output
+p {
+    color: red;
+    font-size: 13px;
+}
+@if(Value>0) {
+    color: red;
+}

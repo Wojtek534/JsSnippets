@@ -1,0 +1,17 @@
+{
+	"ForLoop": {
+		"prefix": "zzForLoop",
+		"body": "@for $$Value from 1 through 10 {\n\t.#{$$Value} {\n\t\tfont-size: 14px;\n\t}\n}",
+		"description": "Iterate from number trought number."
+	},
+	"Mixin": {
+		"prefix": "zzMixin",
+		"body": "@mixin $Name {\n\tcolor:blue;\n\tdisplay: block;\n}",
+		"description": "Variable with set of css properties. Use @include 'Name' to attach."
+	},
+	"If": {
+		"prefix": "zzIf",
+		"body": "@if($Value>0) {\n\tcolor: red;\n}",
+		"description": "Simple if statement"
+	}
+}

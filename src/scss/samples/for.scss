@@ -1,0 +1,27 @@
+// zzForLoop
+@for $Value from 1 through 10 {
+    .Heading#{$Value} {
+        font-size: 14px;
+    }
+}
+
+// Ouput
+.Heading1 {
+    font-size: 14px;
+}
+
+.Heading2 {
+    font-size: 14px;
+}
+
+.Heading3 {
+    font-size: 14px;
+}
+
+.Heading4 {
+    font-size: 14px;
+}
+
+.Heading5 {
+    font-size: 14px;
+}
