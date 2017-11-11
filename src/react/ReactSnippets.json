@@ -1,0 +1,69 @@
+{
+	"bindThis": {
+		"prefix": "zzBind",
+		"body": "this.$1 = this.$1.bind(this);$0",
+		"description": "Binds state inside constructor"
+	},
+	"reactFunctionalComponent": {
+		"prefix": "zzComponent",
+		"body": "import React from 'react';\n\nclass $name extends React.Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default $name;",
+		"description": "Functional React Component in ES6"
+	},
+	"reactStatelessComponent": {
+		"prefix": "zzComponent",
+		"body": "import React from 'react';\n\nconst $name = () => {\n\treturn (\n\t<div>\n\n\t</div>\n\t)\n}\n\nexport default $name;",
+		"description": "Stateless React Component in ES6"
+	},
+	"reactFullComponent": {
+		"prefix": "zzComponentFull",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import {connect} from 'react-redux';",
+			"import {bindActionCreators} from 'redux';",
+			"\nclass $name extends React.Component {",
+			"\tconstructor(props, context) {",
+			"\t\tsuper(props, context)",
+			"\t}\n\t\n\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div></div>",
+			"\t\t);\n\t}\n}\n",
+			"$name.propTypes = {",
+			"\t//myProp: PropTypes.string.isRequired;\n};",
+			"\nfunction mapStateToProps(state, ownProps) {",
+			"\treturn {state: state};\n}",
+			"\nfunction mapDispatchToProps(dispatch) {",
+			"\treturn {\n\t\tactions: bindActionCreators(YourImportedActions, dispatch) \n\t};\n}",
+			"\nexport default connect(mapStateToProps, mapDispatchToProps)($name);"
+		],
+		"description": "Full React-Redux Component in ES6"
+	},
+	"ReactRouter": {
+		"prefix": "zzRouter",
+		"body": "import React from 'react';\nimport {BrowserRouter, Route, Switch} from 'react-router-dom';\n\nconst Router = () => {\n\treturn (\n\t\t<BrowserRouter>\n\t\t\t<Switch>\n\t\t\t\t<Route exact path=\"/\" component={YourComponent}/>\n\t\t\t</Switch>\n\t\t</BrowserRouter>\n\t)\n}\n\nexport default Router;",
+		"description": "Creates a React component class with ES6 module system"
+	},
+	"reducer": {
+		"prefix": "zzReducer",
+		"body": [
+			"function ${name}(state = [], action) {",
+			"\tswitch (action.type) {",
+			"\t\tcase ${ACTION_NAME}:",
+			"\t\t\treturn Object.assign({}, state, {",
+			"\t\t\t\tvisibilityFilter: action.filter",
+			"\t\t\t})",
+			"\t\tdefault:",
+			"\t\t\treturn state",
+			"\t}",
+			"}"
+		]
+	},
+	"actionType": {
+		"prefix": "zzActionType",
+		"body": "export const $ACTION_NAME = '$ACTION_NAME';"
+	},
+	"event": {
+		"prefix": "zzEvent",
+		"body": "$Name = (event) => {\n\tevent.preventDefault();\n\n};"
+	}
+}
